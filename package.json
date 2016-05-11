@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "0.14.x",
-    "react-dom": "0.14.x"
+    "react-dom": "0.14.x",
+    "react-router": "^2.4.0"
   },
   "devDependencies": {
     "nwb": "0.9.x"
