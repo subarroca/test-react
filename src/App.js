@@ -26,7 +26,6 @@ const TRANSLATIONS = {
 class App extends React.Component {
   constructor(props, context) {
     super(props, context)
-    console.log(DEFAULT_LOCALE);
 
     this.state = {
       locale: DEFAULT_LOCALE,
