@@ -43,7 +43,7 @@ class App extends React.Component {
   render() {
     return <div>
       <LocaleProvider adapter={TRANSLATIONS} locale={this.state.locale}>
-        <Translate path="app.welcome" name={this.state.name} tagName="h2"/>
+        <Translate path="app.welcome" name={this.state.name} tagName="h1"/>
 
       </LocaleProvider>
       <div>
@@ -53,9 +53,8 @@ class App extends React.Component {
       </div>
 
       <nav>
-        <Link to="/about">About</Link>
+        <Link to="/about">About</Link>&nbsp;
         <Link to="/cities">Cities</Link>
-        <Link to="/city/0">City</Link>
       </nav>
       
 

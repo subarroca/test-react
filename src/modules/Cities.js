@@ -1,5 +1,7 @@
-import React from 'react';
-import $ from 'jquery';
+import React from 'react'
+import $ from 'jquery'
+import  { Link } from 'react-router'
+
 
 class Cities extends React.Component {
   constructor(props) {
@@ -36,7 +38,9 @@ class Cities extends React.Component {
 
     this.state.cities.forEach(function(city){
       cities.push(
-        <li key={city.id}>{city.content}</li>
+        <li key={city.id}>
+          <Link to={`/city/${city.id}`}>{city.content}</Link>
+        </li>
       )
     }.bind(this));
 
