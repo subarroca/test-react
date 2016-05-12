@@ -20,7 +20,9 @@ class About extends React.Component {
 
   }
 
-  handleSubmit() {
+  handleSubmit(event) {
+    event.preventDefault()
+
     this.setState({
       submitted: true
     })
@@ -137,7 +139,7 @@ class About extends React.Component {
           
             <button
               type="submit"
-              disabled="this.state.formError">
+              disabled={this.state.formError}>
               Submit
             </button>
           </form>
