@@ -2,6 +2,7 @@ import React from 'react'
 import {render} from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 
+
 import App from './App'
 
 import About from './modules/About'
@@ -9,7 +10,6 @@ import Cities from './modules/Cities'
 import City from './modules/City'
 
 
-// render(<App/>, document.querySelector('#app'))
 
 render((
 	<Router history={hashHistory}>
