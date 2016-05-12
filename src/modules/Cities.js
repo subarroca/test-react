@@ -132,8 +132,6 @@ class CitiesListItem extends React.Component {
   render() {
 
     var labelStyle = {
-      display: 'inline-block',
-      width: 200,
       background: this.props.bgColor
     }
 
@@ -141,7 +139,8 @@ class CitiesListItem extends React.Component {
     return <li>
       <Link
         to={`/city/${this.state.city.id}`}
-        style={labelStyle}>
+        style={labelStyle}
+        className="label">
         {this.state.city.content}
       </Link>
 
